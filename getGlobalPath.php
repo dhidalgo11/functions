@@ -14,7 +14,8 @@ function getGlobalPath() {
     $url_to_search = $_SERVER['SCRIPT_FILENAME'];  
     $origin = "MMProject/";
     $position_origin = strrpos($url_to_search, $origin);
-    $url_after_origin = substr($url_to_search, ($position_origin + 10));
+    $length_origin_name = strlen($origin) + 1;
+    $url_after_origin = substr($url_to_search, ($position_origin + $length_origin_name) );    
     $count_directorys = substr_count($url_after_origin, '/');
     $jumps= '';
     if ($count_directorys > 0 && $count_directorys != '') {        
