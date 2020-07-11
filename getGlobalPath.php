@@ -10,9 +10,8 @@
 *
 */
 
-function getGlobalPath() {
+function getGlobalPath($origin = "MMProject/") {
     $url_to_search = $_SERVER['SCRIPT_FILENAME'];  
-    $origin = "MMProject/";
     $position_origin = strrpos($url_to_search, $origin);
     $length_origin_name = strlen($origin) + 1;
     $url_after_origin = substr($url_to_search, ($position_origin + $length_origin_name) );    
