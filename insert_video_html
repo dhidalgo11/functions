@@ -1,0 +1,12 @@
+<div class="container" data-aos="fade-up">
+    <div class="row">                    
+        <div class="col-md-12" style="margin-top:100px;border-left: 1px solid #f6f6f6;border-right: 1px solid #f6f6f6;">                             
+            <video id="autoplay" width="100%" height="600" muted playsinline controls loop>                                
+                <source src="./assets/media/vidvie/BT805.mp4" type="video/mp4">                                
+            </video>
+            <script>
+                document.getElementById('autoplay').play();
+            </script>                            
+        </div>
+    </div>
+</div>
